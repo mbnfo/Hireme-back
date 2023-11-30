@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ecf0f1;
+    }
+
+    #sidebar {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 20px;
+    }
+
+    #main-content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-top: -20px;
+      color: #ecf0f1;
+      background-color: #2c3e50;
+      padding: 10px;
+    }
+
+    #bid-section,
+    #reviews-section {
+      margin-top: 30px;
+    }
+
+    .review {
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Create</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Receipts</a></li>
+        <li><a href="#">Notifications</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="main-content">
+    <h2>Welcome, [User Name]</h2>
+
+    <!-- Bid Submission Section -->
+    <div id="bid-section">
+      <p>[Username] has submitted a bid of [Number].</p>
+    </div>
+
+    <!-- Reviews Section -->
+    <div id="reviews-section">
+      <h2>Reviews</h2>
+      <!-- Example review, you can add more as needed -->
+      <div class="review">
+        <h3>Reviewer Name</h3>
+        <p>This is a sample review. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod justo vel turpis pretium, eu vestibulum dolor rhoncus. Proin ac purus vel urna tincidunt aliquam.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

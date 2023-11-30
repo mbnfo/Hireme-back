@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ecf0f1;
+    }
+
+    #sidebar {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 20px;
+    }
+
+    #main-content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-top: -20px;
+      color: #ecf0f1;
+      background-color: #2c3e50;
+      padding: 10px;
+    }
+
+    #form-section {
+      margin-top: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      cursor: pointer;
+    }
+
+    /* Styling for the links in the sidebar as cards */
+    nav a {
+      text-decoration: none;
+      color: #ecf0f1;
+      padding: 10px;
+      display: block;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px; /* Added margin between links */
+      border-radius: 5px; /* Rounded corners for the cards */
+      border: 1px solid #34495e; /* Border color for the cards */
+      background-color: #2c3e50; /* Background color for the cards */
+      text-decoration: none;
+    }
+
+    nav a.active {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Create</a>
+      <a href="#">Logout</a>
+      <a href="#">Receipts</a>
+      <a href="#">Notifications</a>
+    </nav>
+  </div>
+
+  <div id="main-content">
+    <h2>Welcome, [User Name]</h2>
+
+    <!-- Form Section -->
+    <div id="form-section">
+      <form onSubmit="problem">
+        <input type="text" name="description" placeholder="Description"/>
+        <input type="text" name="specialRequest" placeholder="Special Request"/>
+        <input type="number" name="price" placeholder="Price"/>
+        <Jobs/>
+        <input type="submit" value="Submit"/>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

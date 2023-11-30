@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Set your desired background color */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* Align items to the top of the container */
+      padding: 20px;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      padding: 10px;
+      position: relative;
+    }
+
+    .search-input {
+      width: calc(100% - 40px);
+      padding: 10px;
+      border: 1px solid #ccc; /* Set your desired border color */
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .add-problem-button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      background-color: #4CAF50; /* Set your desired button color */
+      color: white; /* Set your desired button text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .side-section {
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: transparent; /* Set your desired background color */
+    }
+
+    .side-section a {
+      display: block;
+      padding: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #333; /* Set your desired text color */
+      transition: background-color 0.3s;
+      margin-top: 5px; /* Adjust spacing between links */
+    }
+
+    .side-section a:hover {
+      background-color: #ddd; /* Set your desired hover background color */
+    }
+
+    .side-section a.active {
+      background-color: black; /* Set your desired active background color */
+      color: white; /* Set your desired active text color */
+    }
+
+    .card-section {
+      max-width: calc(100% - 240px); /* Set the maximum width to match the search bar and side section combined */
+      padding: 10px;
+    }
+
+    .card {
+      width: 100%; /* Occupy 100% width of the card section */
+      background-color: #fff; /* Set your desired card background color */
+      border-radius: 10px;
+      margin: 10px 0;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set your desired box shadow */
+      position: relative;
+    }
+
+    .card h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .card h3 {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    .card h5 {
+      margin: 10px 0 20px;
+      font-size: 14px;
+      color: #888; /* Set your desired text color */
+    }
+
+    .next-text {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: #555; /* Set your desired text color */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="add-problem-button">Add Problem</button>
+  </div>
+
+  <div class="card-section">
+    <div class="card">
+      <h1>Card Title</h1>
+      <h3>Subtitle</h3>
+      <h5>Additional Information</h5>
+      <div class="next-text">Next</div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+
+  <div class="side-section">
+    <a href="#" class="active">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <!-- Add more links as needed -->
+  </div>
+</div>
+
+</body>
+</html>
